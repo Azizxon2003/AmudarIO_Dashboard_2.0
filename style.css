@@ -1,0 +1,72 @@
+html,
+body {
+  height: 100%;
+}
+
+.meteostations {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.orgName {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+
+  font-size: medium;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.Green {
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+  color: green;
+}
+.Red {
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+  color: red;
+}
+.Yellow {
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: rgb(168, 164, 30);
+  animation-name: blink;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.deviceBox {
+  text-align: center;
+  border-bottom: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.outerBox {
+  text-align: center;
+  margin-bottom: 0px;
+  float: left;
+  height: auto;
+  width: 140px;
+}
+
+.innerDiv {
+  text-align: center;
+}
+
+.battery {
+}
